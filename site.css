@@ -42,32 +42,51 @@ img.card-img-top {
 .welcome p {
     font-size: .8em;
 }
-.welcome h4 {
-    color: purple;
+.welcome h2 {
+    letter-spacing: 0.15em;
+}
+.topline {
+    letter-spacing: 0.2em;
+}
+.welcome h2, .topline, a {
+    color: #662192;
 }
 .footer p {
     font-size: .6em;
 }
-.topline h6 {
-    color: purple;
+.topline {
     font-size: .8em;
 }
 .footerbox {
     background-color: #aaa;
 }
 
-.topline, .footerbox, .cards {
+.footerbox, .cards {
     padding: 1rem 5rem 1rem 5rem;
+}
+.toplinebox {
+    padding-top: 0.4rem;
+}
+.topline {
+    padding-left: 0.3rem;
 }
 
 #mainbg {
     position: absolute;
     width: 100%;
     height: auto;
-    top: 45px;
+    top: 50px;
+    min-width: 1000px;
+}
+
+a, .cards a:hover {
+    text-decoration: none;
 }
 
 .card a {
-    text-decoration: none;
     color: black;
+}
+
+.cards {
+    max-width: 1200px;
 }

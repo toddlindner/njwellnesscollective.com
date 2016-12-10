@@ -30,6 +30,7 @@ img.card-img-top {
     height: auto;
 }
 .card {
+    border-radius: 0;
     box-shadow: 0 0 1px #999;
 }
 .card-deck {

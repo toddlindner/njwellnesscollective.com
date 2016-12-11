@@ -3,12 +3,20 @@ function loadCards() {
     var row = 4;
 
     data = shuffle(data);
+    while (data.length % row != 0) {
+        data[data.length] = {};
+    }
 
     for (var i = 0; i < data.length; ++i) {
         if (i % row == 0) {
             t += '<div class="card-deck-wrapper"><div class="card-deck">';
         }
-        t += cardhtml(data[i], i);
+        var card = data[i];
+        if (card.title1) {
+            t += cardhtml(card, i);
+        } else {
+            t += '<div class="card"></div>';
+        }
         if (i % row == (row-1)) {
             t += '</div></div>';
         }

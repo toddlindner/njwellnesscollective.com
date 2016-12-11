@@ -32,7 +32,9 @@ function cardhtml(card, index) {
     var t = '';
     t += '<div class="card">';
     t += '<a href="' + url + '" target="_new_' + index + '">';
+    t += '<div class="card-img-wrap">';
     t += '<img class="card-img-top" src="cards/' + card.image + '">';
+    t += '</div>';
     t += '<div class="card-block">';
     t += '<p class="card-title-1">' + card.title1 + '</p>';
     t += '<p class="card-title-2">' + card.title2 + '</p>';

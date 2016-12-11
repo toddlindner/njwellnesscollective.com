@@ -22,8 +22,10 @@ function loadCards() {
 
 function cardhtml(card, index) {
     var url = card.url;
+    var linktext = card.url;
     if (url.indexOf("@") > -1) {
         url = "mailto:" + url;
+        linktext = "Email " + linktext;
     } else if (url.indexOf("http") < 0) {
         url = "http://" + url;
     }
@@ -34,7 +36,7 @@ function cardhtml(card, index) {
     t += '<div class="card-block">';
     t += '<p class="card-title-1">' + card.title1 + '</p>';
     t += '<p class="card-title-2">' + card.title2 + '</p>';
-    t += '<p class="card-url">' + card.url + '</p>';
+    t += '<p class="card-url">' + linktext + '</p>';
     t += '<p class="card-text">';
     t += card.text;
     t += '</p></div>';

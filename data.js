@@ -63,7 +63,7 @@ var data = [
 "text": "My name is Tonya and I am a Reiki Master and essential oil enthusiast. My business, Sisters Helping Seniors, is a full concierge service for Seniors as they navigate through the long-term care process. I love the idea of incorporating holistic services to cater to the senior population. I do house calls and I also have an office in Fanwood. We are a valuable resource for our growing seniors!"
 },
 {
-"image": "breathing_room.jpg",
+"image": "shelly_wyand.jpg",
 "title1": "The Breathing Room",
 "title2": "Meditation",
 "url": "facebook.com/TheBreathingRoomNJ",
@@ -119,7 +119,7 @@ var data = [
 "text": "Whole Life discovery offers Yoga, meditation, and Health/ Life Coaching services with specialties in the area of transition and relationship. Gift certificates are available for all services. email mindy@wholelifediscovery for more information."
 },
 {
-"image": "health_in_motion.jpg",
+"image": "him_stern.jpg",
 "title1": "Health In Motion",
 "title2": "Acupuncture/Pilates",
 "url": "www.healthinmotion.biz",
@@ -165,7 +165,7 @@ var data = [
 "title1": "Arbonne",
 "title2": "Beauty/Skin Care",
 "url": "mariaadubato.arbonne.com",
-"text": "Your skin is your body’s largest organ - so be sure to feed it very carefully!  Arbonne products provide peace of mind for your entire family:  Botanically-based, Vegan and Gluten-Free.  Premier Anti-Aging RE9 Products.  Skin Care, Make-up and Nutrition.  The best of Nature & Science for over 35 years.  Holiday Special Offer:  Any online Arbonne order (placed from Dec 10, 2016 - January 20, 2017) receives a free Arbonne skin care consultation and gift bag sampler of our most popular products! Arbonne is pure, safe and beneficial."
+"text": "Your skin is your body’s largest organ - so be sure to feed it very carefully!  Arbonne products provide peace of mind for your entire family:  Botanically-based, Vegan and Gluten-Free.  Premier Anti-Aging RE9 Products, Skin Care, Make-up and Nutrition.  The best of Nature & Science for over 35 years.  Holiday Special Offer:  Any online Arbonne order (placed from Dec 10, 2016 - January 20, 2017) receives a free Arbonne skin care consultation and gift bag sampler of our most popular products! Arbonne is pure, safe and beneficial."
 },
 {
 "image": "beauty_counter.jpg",
@@ -210,7 +210,7 @@ var data = [
 "text": "Soaperior Organix is a special needs family business selling certified-organic soap as individual bars ($4.89) or in three sizes of gift bags (Petite $8; Duo $13.49; Deluxe $22.99). We started Soaperior Organix in 2014 to provide vocational training for our children with autism. Since then, we have also worked with several special education programs to provide job skill training in schools. Our high-quality soaps come in nine different scents (including Simply Clean for allergy sufferers) and are excellent gifts for any occasion. Soaperior Organix sells incredible soap at reasonable prices to support inclusion in the job market for people with special needs. Free local delivery!"
 },
 {
-"image": "kathy_most.jpg",
+"image": "touch_stone.jpg",
 "title1": "Kathy Most, LCSW",
 "title2": "Touchstone Psychotherapy, LLC",
 "url": "touchstonepsychotherapy.com",
@@ -231,7 +231,7 @@ var data = [
 "text": "Social Butterfly Counseling is a private psychotherapy practice specializing in holistically supporting children, families and adults in making healthy choices and creating positive change. Located in Wyckoff."
 },
 {
-"image": "fatima_b.jpg",
+"image": "shaklee.jpg",
 "title1": "Fatima Bohorquez., Shaklee",
 "title2": "Natural Nutrition Consultant",
 "url": "fatimab.shopshaklee180.com/us/en",

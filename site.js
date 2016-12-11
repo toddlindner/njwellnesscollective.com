@@ -1,4 +1,6 @@
 function loadCards() {
+    document.getElementById("count").innerHTML = data.length;
+
     var t = '';
     var row = 4;
 
@@ -24,8 +26,6 @@ function loadCards() {
 
     var cards = document.getElementById("cards");
     cards.innerHTML += t;
-
-    document.getElementById("count").innerHTML = data.length;
 }
 
 function cardhtml(card, index) {

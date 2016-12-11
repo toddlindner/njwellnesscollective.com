@@ -3,29 +3,43 @@ body {
 }
 .card-title-1 {
     margin: 0;
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: bold;
     color: purple;
 }
 .card-title-2 {
-    margin: 0;
     font-weight: bold;
-    font-size: 0.6em;
 }
-.card-url {
+.card-url, .card-title-2 {
     margin: 0;
-    font-size: 0.6em;
+    font-size: 0.8em;
+}
+.card-title-2, .card-url, .card-text {
+    color: #555;
 }
 .card-text {
     margin-top: 10px;
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 .card-block {
     padding: 10px;
 }
 .card-img-wrap {
     padding: 7px 7px 0 7px;
+    position: relative;
 }
+.sale {
+    margin-right: 8px;
+    margin-bottom: 1px;
+    font-size: 0.7em;
+    padding: 0.1rem 0.4rem;
+    background-color: #662192;
+    color: #eee;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 img.card-img-top {
     max-width: 100%;
     width: 100%;
@@ -47,7 +61,7 @@ img.card-img-top {
     padding-top: 50px;
 }
 .welcome p {
-    font-size: .8em;
+    font-size: .9em;
 }
 .welcome h2 {
     letter-spacing: 0.15em;

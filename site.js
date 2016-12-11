@@ -42,6 +42,9 @@ function cardhtml(card, index) {
     t += '<a href="' + url + '" target="_new_' + index + '">';
     t += '<div class="card-img-wrap">';
     t += '<img class="card-img-top" src="cards/' + card.image + '">';
+    if (card.sale) {
+        t += '<div class="sale">' + card.sale + '</div>';
+    }
     t += '</div>';
     t += '<div class="card-block">';
     t += '<p class="card-title-1">' + card.title1 + '</p>';

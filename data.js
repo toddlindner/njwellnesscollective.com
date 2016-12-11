@@ -126,7 +126,7 @@ var data = [
 "text": "We are a holistic wellness center located in Westfield offering acupuncture, cupping therapy, Chinese herbal medicine, holistic nutrition counseling and private/semi private pilates reformer sessions. This holiday season we are raffling off a wellness basket as well as 10% off gift certificates through January."
 },
 {
-"image": "risa_kaban.jpg",
+"image": "healing_touch.jpg",
 "title1": "Risa Kaban Physical Therapy",
 "title2": "Cranio-sacral Therapy/Visceral Mobilization",
 "url": "thehealingtouchpt@yahoo.com",

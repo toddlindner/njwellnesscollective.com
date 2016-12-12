@@ -1,4 +1,4 @@
-function loadCards() {
+function loadCards(data) {
     document.getElementById("count").innerHTML = data.length;
 
     var t = '';
@@ -70,4 +70,13 @@ function shuffle(array) {
     return array;
 }
 
-loadCards();
+if (typeof firebase !== 'undefined') {
+    firebase.initializeApp({
+        databaseURL: "https://njwellnesscollective-559a1.firebaseio.com/"
+    });
+    firebase.database().ref('/cards').once('value').then(function(snapshot) {
+        loadCards(snapshot.val());
+    });
+} else {
+    loadCards(staticData);
+}

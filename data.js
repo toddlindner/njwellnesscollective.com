@@ -1,4 +1,4 @@
-var data = [
+var staticData = [
 {
 "image": "byourword.jpg",
 "title1": "B Your Word",

@@ -37,11 +37,18 @@ function cardhtml(card, index) {
     } else if (url.indexOf("http") < 0) {
         url = "http://" + url;
     }
+    var image = card.image;
+    var search = "https://drive.google.com/open?";
+    if (image.indexOf(search) == 0) {
+        image = "https://drive.google.com/uc?export=view&" + image.substring(search.length);
+    } else {
+        image = 'cards/' + image;
+    }
     var t = '';
     t += '<div class="card">';
     t += '<a href="' + url + '" target="_new_' + index + '">';
     t += '<div class="card-img-wrap">';
-    t += '<img class="card-img-top" src="cards/' + card.image + '">';
+    t += '<img class="card-img-top" src="' + image + '">';
     if (card.sale) {
         t += '<div class="sale">' + card.sale + '</div>';
     }
@@ -70,6 +77,22 @@ function shuffle(array) {
     return array;
 }
 
+function sheetParse(atom) {
+    var d = atom.feed.entry;
+    var cards = [];
+    for (var i=0; i<d.length; ++i) {
+        cards[cards.length] = {
+            title1: d[i]["gsx$title1"]["$t"],
+            title2: d[i]["gsx$title2"]["$t"],
+            image: d[i]["gsx$image"]["$t"],
+            url: d[i]["gsx$url"]["$t"],
+            sale: d[i]["gsx$sale"]["$t"],
+            text: d[i]["gsx$text"]["$t"],
+        }
+    }
+    loadCards(cards);
+}
+
 if (typeof firebase !== 'undefined') {
     firebase.initializeApp({
         databaseURL: "https://njwellnesscollective-559a1.firebaseio.com/"
@@ -77,6 +100,6 @@ if (typeof firebase !== 'undefined') {
     firebase.database().ref('/cards').once('value').then(function(snapshot) {
         loadCards(snapshot.val());
     });
-} else {
+} else if (false) {
     loadCards(staticData);
 }

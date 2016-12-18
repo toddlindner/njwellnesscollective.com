@@ -264,3 +264,10 @@ var staticData = [
 "sale": "Gift Certificates"
 }
 ]
+
+/*
+for (var i in staticData) {
+    var d = staticData[i];
+    console.log("\t" + d.image + "\t" + d.title1 + "\t" + d.title2 + "\t" + d.url + "\t" + d.text + "\t" + d.sale + "\t")
+}
+*/

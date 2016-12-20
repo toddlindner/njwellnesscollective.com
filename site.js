@@ -80,11 +80,12 @@ function shuffle(array) {
 function sheetParse(atom) {
     var d = atom.feed.entry;
     var cards = [];
+    var imageKey = "imagefilename"; // "image"
     for (var i=0; i<d.length; ++i) {
         cards[cards.length] = {
             title1: d[i]["gsx$title1"]["$t"],
             title2: d[i]["gsx$title2"]["$t"],
-            image: d[i]["gsx$image"]["$t"],
+            image: d[i]["gsx$" + imageKey]["$t"],
             url: d[i]["gsx$url"]["$t"],
             sale: d[i]["gsx$sale"]["$t"],
             text: d[i]["gsx$text"]["$t"],

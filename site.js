@@ -36,6 +36,8 @@ function cardhtml(card, index) {
         linktext = "Email " + linktext;
     } else if (url.indexOf("http") < 0) {
         url = "http://" + url;
+    } else if (url.indexOf("https") < 0) {
+        url = "https://" + url;
     }
     var image = card.image;
     var search = "https://drive.google.com/open?";
